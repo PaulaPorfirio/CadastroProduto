@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventApp", "InventApp\InventApp.csproj", "{788169C5-B090-4C16-8F18-2954FA36EF39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{788169C5-B090-4C16-8F18-2954FA36EF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788169C5-B090-4C16-8F18-2954FA36EF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788169C5-B090-4C16-8F18-2954FA36EF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788169C5-B090-4C16-8F18-2954FA36EF39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79A9DA05-2C36-481C-928B-5FC02FFB7532}
+	EndGlobalSection
+EndGlobal
