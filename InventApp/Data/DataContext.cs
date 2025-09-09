@@ -8,10 +8,14 @@ namespace InventApp.Data
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
-            : base(options)
-        {
-        }
+            : base(options) {}
 
         public DbSet<Produtos> Produtos {  get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Produtos>().HasKey(p => p.Codigo);
+            modelBuilder.Entity<Produtos>().Property(p => p.Codigo).ValueGeneratedOnAdd();
+        }
     }
 }

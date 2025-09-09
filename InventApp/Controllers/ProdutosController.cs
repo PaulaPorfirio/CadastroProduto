@@ -34,28 +34,9 @@ namespace InventApp.Controllers
 
             return Ok(Produto);
         }
-
-        [HttpGet("GetProdutoPorCategoria")]
-        public async Task<ActionResult<List<Produtos>>> GetProdutoPorCategoria(int Id)
-        {
-            try
-            {
-                var produtos = await Db.Produtos.Where(p => p.CodigoCategoria == Id).ToListAsync();
-
-                if (!produtos.Any()) { 
-                    return NotFound(new {error = "Nenhum produto encontrado." });
-                }
-
-                return Ok(produtos);
-            }
-            catch (Exception)
-            {
-                return Problem(title: "Erro ao buscar Produtos por Categoria {0}." + Convert.ToString(Id), statusCode: StatusCodes.Status500InternalServerError);
-            };
-        }
         
         [HttpPost("AdicionaProduto")]
-        public async Task<ActionResult<Produtos>> AdicionaProduto(int Id, Produtos produto)
+        public async Task<ActionResult<Produtos>> AdicionaProduto(Produtos produto)
         {
             if (string.IsNullOrWhiteSpace(produto.Nome)) return BadRequest("Nome é obrigatório.");
             if (produto.ValorUnitario < 0m) return BadRequest("ValorUnitario deve ser ≥ 0.");
@@ -88,7 +69,7 @@ namespace InventApp.Controllers
                 if (Cadastro is null) return NotFound();
 
                 Cadastro.Nome = produto.Nome;
-                Cadastro.CodigoCategoria = produto.CodigoCategoria;
+                Cadastro.Categoria = produto.Categoria;
                 Cadastro.DataCadastro = DateTime.UtcNow;
                 Cadastro.ValorUnitario = produto.ValorUnitario;
                 Cadastro.Quantidade = produto.Quantidade;

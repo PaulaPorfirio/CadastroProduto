@@ -9,6 +9,7 @@ namespace InventApp.Models
     public class Produtos 
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Codigo { get; set; }
 
         [Required]
@@ -16,16 +17,15 @@ namespace InventApp.Models
         public string Nome { get; set; }
 
         [Required]
-        public int CodigoCategoria { get; set; }
-
-        [Required]
         [StringLength(30)]
-        public string DescricaoCategoria { get; set; }
+        public string Categoria { get; set; }
 
         [Required]
+        [Range(0, double.MaxValue, ErrorMessage = "ValorUnitario deve ser ≥ 0.")]
         public decimal ValorUnitario {  get; set; }
 
         [Required]
+        [Range(0, int.MaxValue, ErrorMessage = "Quantidade deve ser ≥ 0.")]
         public decimal Quantidade {  get; set; }
 
         [Required, DataType(DataType.DateTime)]
