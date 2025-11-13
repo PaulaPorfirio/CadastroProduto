@@ -1,5 +1,5 @@
 {
-  "name": "inventapp-vue",
+  "name": "appcadastro-vue",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
     "axios": "^1.11.0",
     "vue": "^3.5.18"
   },
+  "D": "\\AppCadastro\\CadastroProduto\\AppCadastro_vue",
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^7.1.2"
