@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using InventApp.Models;
-using InventApp.Data;
+using AppCadastro.Models;
+using AppCadastro.Data;
 
-namespace InventApp.Controllers
+namespace AppCadastro.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

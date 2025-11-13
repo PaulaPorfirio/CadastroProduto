@@ -1,8 +1,8 @@
 ﻿<template>
     <div class="container">
 
-        <h1>InventApp – </h1>
-        <h1 class="TituloCadastro">Cadastro Produtos</h1>
+        <h1>AppCadastro – </h1>
+        <h1 class="TituloCadastro">Produtos</h1>
             <div class="toolbar">
                 <button type="button" class="btn" @click="carregar" :disabled="carregando">
                     {{ carregando ? 'Listando...' : 'Listar' }}
@@ -141,7 +141,7 @@
 
     .TituloCadastro {
         margin-top: -65px;
-        margin-left: 190px;
+        margin-left: 228px;
         font-style: normal;
         color: #1053a1;
     }

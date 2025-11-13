@@ -1,5 +1,5 @@
 using Microsoft.OpenApi.Models;
-using InventApp.Data;
+using AppCadastro.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 
@@ -9,10 +9,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "InventApp API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AppCadastro API", Version = "v1" });
 });
 
-builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("InventApp"));
+builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("AppCadastro"));
 
 var app = builder.Build();
 

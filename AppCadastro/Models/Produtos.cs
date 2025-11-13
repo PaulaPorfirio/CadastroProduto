@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using static InventApp.Models.Produtos;
+using static AppCadastro.Models.Produtos;
 using Microsoft.EntityFrameworkCore;
 
-namespace InventApp.Models
+namespace AppCadastro.Models
 {
     public class Produtos 
     {

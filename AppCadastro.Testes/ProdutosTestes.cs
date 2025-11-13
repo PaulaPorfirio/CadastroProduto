@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using InventApp.Models; 
+using AppCadastro.Models; 
 using Xunit;
 
-namespace InventApp.Testes;
+namespace AppCadastro.Testes;
 
 public class ProdutosTestes
 {

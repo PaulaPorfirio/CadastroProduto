@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using InventApp.Models;
+using AppCadastro.Models;
 
-namespace InventApp.Data
+namespace AppCadastro.Data
 {
     public class DataContext : DbContext
     {
