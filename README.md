@@ -15,7 +15,6 @@ Pré-requisitos:
 - ⁠NPM.
 
 <p align="center">
-  <img width="1882" height="896" alt="image" src="https://github.com/user-attachments/assets/42b9eb1e-6f08-4e79-9274-4eb7877d95e0" /><br>
-  <img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/6b96d9cb-7391-45e7-8664-278ad486e09c" />
-  <img width="1886" height="890" alt="image" src="https://github.com/user-attachments/assets/483da6eb-4b83-457f-9701-e95bdd295ac4" />
+  <img width="1882" height="896" alt="image" src="https://github.com/user-attachments/assets/614052dc-280c-4830-9f1c-ba1ebb13a854"/><br>
+  <img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/b9f14b87-cf2e-4849-933f-0b74fd346009"" />
 </p>
